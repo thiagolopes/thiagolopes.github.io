@@ -1,7 +1,17 @@
-header{
+header {
     position: absolute;
+    text-align: center;
     text-transform: uppercase;
-    nav{
+    color: $text-color;
+    margin-right: auto;
+    margin-left: auto;
+    right: 0;
+    left: 0;
+    nav {
         margin: 5px 20px;
+    }
+
+    a {
+        margin: 0 15px;
     }
 }

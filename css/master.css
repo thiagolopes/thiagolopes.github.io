@@ -55,10 +55,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+.logos-sprite, .logos-debian, .logos-fedora, .logos-gentoo, .logos-gnu, .logos-opensuse, .logos-slackware, .logos-tux, .linux, .gnu, .slackware, .debian, .fedora, .gentoo, .opensuse {
+  background-image: url('../img/logos-s473d56b8ba.png');
+  background-repeat: no-repeat;
+}
+
+html {
+  font-size: 137.5%;
+  line-height: 1.09091em;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   background-color: #fafafa;
-  text-align: center;
   line-height: 1.7rem;
 }
 
@@ -79,21 +89,22 @@ h1 {
   *display: inline;
 }
 
-html {
-  font-size: 137.5%;
-  line-height: 1.09091em;
-}
-
 .about {
-  background: url('../img/background.png?1478004704');
+  background: url('../img/background.png?1478479042');
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
   text-shadow: black 0 0 5px;
+  text-align: center;
   padding: 180px 15%;
   flex-direction: column;
   color: #eee;
+}
+@media (max-width: 980px) {
+  .about {
+    padding: 180px 0;
+  }
 }
 .about img {
   -moz-box-shadow: black 0 0 22px;
@@ -106,8 +117,8 @@ html {
   -o-transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   transition-duration: 0.5s;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   margin: 0 auto 2em;
 }
 .about img:hover {
@@ -122,15 +133,164 @@ html {
 
 header {
   position: absolute;
+  text-align: center;
   text-transform: uppercase;
+  color: #eee;
+  margin-right: auto;
+  margin-left: auto;
+  right: 0;
+  left: 0;
 }
 header nav {
   margin: 5px 20px;
 }
+header a {
+  margin: 0 15px;
+}
 
-.linux {
-  padding: 180px 15%;
+.logos-debian {
+  background-position: -240px 0;
+}
+
+.logos-fedora {
+  background-position: 0 -385px;
+}
+
+.logos-gentoo {
+  background-position: -140px 0;
+}
+
+.logos-gnu {
+  background-position: 0 -208px;
+}
+
+.logos-opensuse {
+  background-position: 0 0;
+}
+
+.logos-slackware {
+  background-position: 0 -133px;
+}
+
+.logos-tux {
+  background-position: -150px -208px;
+}
+
+.linux-div {
   -moz-box-shadow: black 0 0 22px;
   -webkit-box-shadow: black 0 0 22px;
   box-shadow: black 0 0 22px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  padding: 180px 15%;
+}
+.linux-div ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.linux-div li {
+  margin: 10px;
+}
+.linux-div div {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-self: center;
+  align-self: center;
+}
+@media (max-width: 980px) {
+  .linux-div {
+    padding: 180px 0;
+  }
+  .linux-div div {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-self: center;
+    align-self: center;
+  }
+  .linux-div p {
+    text-align: center;
+  }
+}
+
+.itens {
+  width: 50%;
+}
+.itens p:first-letter {
+  font-size: 26.4px;
+}
+
+.linux {
+  background-position: -150px -208px;
+  height: 177px;
+  width: 150px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.gnu {
+  background-position: 0 -208px;
+  height: 147px;
+  width: 150px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.slackware {
+  background-position: 0 -133px;
+  height: 75px;
+  width: 350px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.debian {
+  background-position: -240px 0;
+  height: 133px;
+  width: 100px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.fedora {
+  background-position: 0 -385px;
+  height: 63px;
+  width: 200px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.gentoo {
+  background-position: -140px 0;
+  height: 105px;
+  width: 100px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.opensuse {
+  background-position: 0 0;
+  height: 89px;
+  width: 140px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
 }

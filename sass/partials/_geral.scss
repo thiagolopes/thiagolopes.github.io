@@ -1,8 +1,7 @@
+@include establish-baseline;
 body {
     @include open-sans-regular;
-    // @include background-image(linear-gradient(to right, $gradiente-direita, $gradiente-esquerda
     background-color: #fafafa;
-    text-align: center;
     line-height:1.7rem;
 }
 

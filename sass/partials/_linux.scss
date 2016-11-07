@@ -1,4 +1,73 @@
-.linux{
-    padding: 180px 15%;
+@include all-logos-sprites;
+
+.linux-div {
     @include box-shadow($color-shadow 0 0 22px);
+    @include open-sans-slim;
+    padding: 180px 15%;
+
+    ul {
+        @include display-flex;
+        @include flex-wrap(wrap);
+        @include justify-content(center);
+    }
+
+    li {
+        margin: 10px;
+    }
+
+    div {
+        @include display-flex;
+        @include justify-content(center);
+        @include align-self(center);
+    }
+    @media (max-width: $mq-mobile) {
+        padding: 180px 0;
+
+        div {
+            @include flex-direction(column);
+            @include align-self(center);
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+}
+
+.itens {
+    width: 50%;
+
+    p {
+        &:first-letter {
+            font-size: 1.2*$base-font-size;
+        }
+    }
+}
+
+.linux {
+    @include sprite-text(tux);
+}
+
+.gnu {
+    @include sprite-text(gnu);
+}
+
+.slackware {
+    @include sprite-text(slackware);
+}
+
+.debian {
+    @include sprite-text(debian);
+}
+
+.fedora {
+    @include sprite-text(fedora);
+}
+
+.gentoo {
+    @include sprite-text(gentoo);
+}
+
+.opensuse {
+    @include sprite-text(opensuse);
 }

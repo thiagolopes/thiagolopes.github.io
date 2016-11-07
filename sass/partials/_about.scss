@@ -3,16 +3,20 @@
     @include display-flex;
     @include justify-content(center);
     @include text-shadow($color-shadow 0 0 5px);
+    text-align: center;
     padding: 180px 15%;
     flex-direction: column;
     color: $text-color;
+    @media(max-width: $mq-mobile) {
+        padding: 180px 0;
+    }
 
     img {
         @include box-shadow($color-shadow 0 0 22px);
         @include border-radius(100%);
         @include transition-duration(.5s);
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         margin: 0 auto 2em;
 
         &:hover {

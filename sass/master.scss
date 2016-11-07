@@ -5,9 +5,8 @@
 @import "compass/typography";
 @import "compass/utilities";
 @import "variables/_variables";
+@import "logos/*.png";
 @import "partials/_geral";
-// tipography,font too
-@include establish-baseline;
 @import "partials/_about";
 @import "partials/_header";
-@import "partials/_linux"
+@import "partials/_linux";

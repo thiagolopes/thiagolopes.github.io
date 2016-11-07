@@ -1,11 +1,24 @@
 @mixin open-sans-regular {
     font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
 }
 @mixin open-sans-bold {
-    font-family: 'Open Sans 400 ', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+@mixin open-sans-slim {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+@mixin sprite-text ($name){
+    @include logos-sprite($name,true);
+    @include hide-text;
 }
 $gradiente-direita: #155A95;
 $gradiente-esquerda: #15935C;
 $color-shadow: black;
 $text-color: #eee;
 $base-font-size: 22px;
+$mq-mobile: 980px;
+$logos-spacing: 5px;
+$logos-layout: "smart";
