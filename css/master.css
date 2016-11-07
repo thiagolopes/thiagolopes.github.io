@@ -62,14 +62,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 html {
   font-size: 137.5%;
-  line-height: 1.09091em;
+  line-height: 1.7em;
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   background-color: #fafafa;
-  line-height: 1.7rem;
+}
+@media (max-width: 980px) {
+  body {
+    font-size: 1.27273em;
+    line-height: 1.09286em;
+  }
 }
 
 a {
@@ -104,7 +109,8 @@ h1 {
 }
 @media (max-width: 980px) {
   .about {
-    padding: 180px 0;
+    padding: 180px 10%;
+    text-align: justify;
   }
 }
 .about img {
@@ -195,6 +201,11 @@ header a {
 }
 .linux-div li {
   margin: 10px;
+  transition: 0.3s;
+}
+.linux-div li:hover {
+  transform: rotate(-3deg) scale(0.9);
+  filter: saturate(6);
 }
 .linux-div div {
   display: -webkit-flex;
@@ -215,7 +226,10 @@ header a {
     align-self: center;
   }
   .linux-div .itens {
-    width: 98%;
+    width: 80%;
+  }
+  .linux-div p {
+    padding-top: 50px;
   }
 }
 

@@ -3,7 +3,9 @@
 body {
     @include open-sans-regular;
     background-color: $background-color;
-    line-height: 1.7rem;
+    @media(max-width: $mq-mobile){
+        @include adjust-font-size-to(28px);
+    }
 }
 
 a {

@@ -13,6 +13,12 @@
 
     li {
         margin: 10px;
+        transition: 0.3s;
+    }
+
+    li:hover {
+        transform: rotate(-3deg) scale(0.9);
+        filter: saturate(6);
     }
 
     div {
@@ -29,7 +35,11 @@
         }
 
         .itens {
-            width: 98%;
+            width: 80%;
+        }
+
+        p {
+            padding-top: 50px;
         }
     }
 }
@@ -39,6 +49,7 @@
 
     p {
         text-align: justify;
+
         &:first-letter {
             font-size: 1.2*$base-font-size;
         }

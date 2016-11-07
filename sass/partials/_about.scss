@@ -8,7 +8,8 @@
     padding: 180px 15%;
     color: $text-color;
     @media(max-width: $mq-mobile) {
-        padding: 180px 0;
+        padding: 180px 10%;
+        text-align: justify;
     }
 
     img {
