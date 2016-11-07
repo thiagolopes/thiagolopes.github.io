@@ -95,10 +95,11 @@ h1 {
   display: flex;
   -webkit-justify-content: center;
   justify-content: center;
+  -webkit-flex-direction: column;
+  flex-direction: column;
   text-shadow: black 0 0 5px;
   text-align: center;
   padding: 180px 15%;
-  flex-direction: column;
   color: #eee;
 }
 @media (max-width: 980px) {
@@ -213,13 +214,16 @@ header a {
     -webkit-align-self: center;
     align-self: center;
   }
-  .linux-div p {
-    text-align: center;
+  .linux-div .itens {
+    width: 98%;
   }
 }
 
 .itens {
   width: 50%;
+}
+.itens p {
+  text-align: justify;
 }
 .itens p:first-letter {
   font-size: 26.4px;

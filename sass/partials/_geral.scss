@@ -1,8 +1,9 @@
 @include establish-baseline;
+
 body {
     @include open-sans-regular;
-    background-color: #fafafa;
-    line-height:1.7rem;
+    background-color: $background-color;
+    line-height: 1.7rem;
 }
 
 a {

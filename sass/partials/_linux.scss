@@ -28,8 +28,8 @@
             @include align-self(center);
         }
 
-        p {
-            text-align: center;
+        .itens {
+            width: 98%;
         }
     }
 }
@@ -38,6 +38,7 @@
     width: 50%;
 
     p {
+        text-align: justify;
         &:first-letter {
             font-size: 1.2*$base-font-size;
         }

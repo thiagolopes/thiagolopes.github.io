@@ -2,10 +2,10 @@
     @include background(image-url("background.png"));
     @include display-flex;
     @include justify-content(center);
+    @include flex-direction(column);
     @include text-shadow($color-shadow 0 0 5px);
     text-align: center;
     padding: 180px 15%;
-    flex-direction: column;
     color: $text-color;
     @media(max-width: $mq-mobile) {
         padding: 180px 0;
