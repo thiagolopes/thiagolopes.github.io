@@ -1,0 +1,13 @@
+// base imports
+@import url( 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
+@import "base/reset.scss";
+@import "compass/css3";
+@import "compass/typography";
+@import "compass/utilities";
+@import "variables/_variables";
+@import "partials/_geral";
+// tipography,font too
+@include establish-baseline;
+@import "partials/_about";
+@import "partials/_header";
+@import "partials/_linux"

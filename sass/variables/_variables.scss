@@ -1,0 +1,11 @@
+@mixin open-sans-regular {
+    font-family: 'Open Sans', sans-serif;
+}
+@mixin open-sans-bold {
+    font-family: 'Open Sans 400 ', sans-serif;
+}
+$gradiente-direita: #155A95;
+$gradiente-esquerda: #15935C;
+$color-shadow: black;
+$text-color: #eee;
+$base-font-size: 22px;

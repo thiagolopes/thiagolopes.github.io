@@ -1,0 +1,23 @@
+.about {
+    @include background(image-url("background.png"));
+    @include display-flex;
+    @include justify-content(center);
+    @include text-shadow($color-shadow 0 0 5px);
+    padding: 180px 15%;
+    flex-direction: column;
+    color: $text-color;
+
+    img {
+        @include box-shadow($color-shadow 0 0 22px);
+        @include border-radius(100%);
+        @include transition-duration(.5s);
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 2em;
+
+        &:hover {
+            @include border-radius(3px);
+            @include scale(1.8);
+        }
+    }
+}
