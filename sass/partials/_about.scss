@@ -1,11 +1,13 @@
+@include all-social-sprites;
+
 .about {
     @include background(image-url("background.png"));
     @include display-flex;
     @include justify-content(center);
     @include flex-direction(column);
+    @include align-items(center);
     @include text-shadow($color-shadow 0 0 5px);
     text-align: center;
-    padding: 180px 15%;
     color: $text-color;
     @media(max-width: $mq-mobile) {
         padding: 180px 10%;
@@ -25,4 +27,54 @@
             @include scale(1.8);
         }
     }
+}
+
+.bar {
+    @include background-image(linear-gradient(to bottom right, $color-bar, $gradiente-esquerda));
+    @include border-radius(5px);
+    @include display-flex;
+    @include justify-content(space-around);
+    @include align-items(baseline);
+    margin-top: 3em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: $color-bar;
+    border: 1px solid $border-color;
+    color: $text-color-bar;
+    text-shadow: 0 1px 0 $border-color;
+
+    a {
+        margin: 4px 15px;
+        @include transition(0.1s);
+        @include animation(init-bar 1.3s);
+        &:hover {
+            @include scale(0.8);
+        }
+    }
+    @include keyframes(init-bar){
+        from {
+            margin: 0 50px;
+            opacity: 0;
+        }
+    }
+}
+
+.github {
+    @include sprite-social-text(github);
+}
+
+.linkedin {
+    @include sprite-social-text(linkedin);
+}
+
+.facebook {
+    @include sprite-social-text(facebook);
+}
+
+.twitter {
+    @include sprite-social-text(twitter);
+}
+
+.email {
+    @include sprite-social-text(email);
 }

@@ -3,15 +3,21 @@
 body {
     @include open-sans-regular;
     background-color: $background-color;
-    @media(max-width: $mq-mobile){
-        @include adjust-font-size-to(28px);
+    @media(max-width: $mq-mobile) {
+         @include adjust-font-size-to(28px);
     }
 }
 
 a {
     @include unstyled-link;
+    @include hover-link;
+    cursor: pointer;
 }
 
 h1 {
     @include inline-block;
+}
+
+section {
+    padding: 180px 15%;
 }

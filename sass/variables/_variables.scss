@@ -10,17 +10,29 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
 }
-@mixin sprite-text ($name){
-    @include logos-sprite($name,true);
+@mixin sprite-logos-text ($name) {
+     @include logos-sprite($name,true);
     @include hide-text;
 }
-$gradiente-direita: #155A95;
-$gradiente-esquerda: #15935C;
+@mixin sprite-social-text ($name) {
+     @include social-sprite($name,true);
+    @include hide-text;
+    background-repeat: no-repeat;
+}
 $color-shadow: black;
 $text-color: #eee;
 $background-color: #fafafa;
 $base-font-size: 22px;
 $mq-mobile: 980px;
+$base-line-height: 1.7em;
+//logos varibles
 $logos-spacing: 5px;
 $logos-layout: "smart";
-$base-line-height: 1.7em;
+//social variables
+$social-spacing: 5px;
+$social-layout: "horizontal";
+// variaveis do bar info
+$gradiente-esquerda: darken(#f3f3f3,10);
+$color-bar: #fff;
+$border-color: #909090;
+$text-color-bar: #333;

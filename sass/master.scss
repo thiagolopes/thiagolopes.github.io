@@ -2,11 +2,13 @@
 @import url( 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600');
 @import "base/reset.scss";
 @import "compass/css3";
+@import "compass/layout";
 @import "compass/typography";
 @import "compass/utilities";
 @import "variables/_variables";
 @import "logos/*.png";
+@import "social/*.png";
 @import "partials/_geral";
-@import "partials/_about";
 @import "partials/_header";
+@import "partials/_about";
 @import "partials/_linux";

@@ -60,6 +60,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-repeat: no-repeat;
 }
 
+.social-sprite, .social-email, .social-facebook, .social-github, .social-linkedin, .social-twitter, .github, .linkedin, .facebook, .twitter, .email {
+  background-image: url('../img/social-s0369aa5466.png');
+  background-repeat: no-repeat;
+}
+
 html {
   font-size: 137.5%;
   line-height: 1.7em;
@@ -81,9 +86,14 @@ a {
   color: inherit;
   text-decoration: inherit;
   cursor: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
 a:active, a:focus {
   outline: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
 }
 
 h1 {
@@ -94,6 +104,49 @@ h1 {
   *display: inline;
 }
 
+section {
+  padding: 180px 15%;
+}
+
+header {
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  color: #eee;
+  margin-right: auto;
+  margin-left: auto;
+  right: 0;
+  left: 0;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+header nav {
+  margin: 5px 20px;
+}
+header a {
+  margin: 0 15px;
+}
+
+.social-email {
+  background-position: 0 0;
+}
+
+.social-facebook {
+  background-position: -37px 0;
+}
+
+.social-github {
+  background-position: -74px 0;
+}
+
+.social-linkedin {
+  background-position: -111px 0;
+}
+
+.social-twitter {
+  background-position: -148px 0;
+}
+
 .about {
   background: url('../img/background.png?1478479042');
   display: -webkit-flex;
@@ -102,9 +155,10 @@ h1 {
   justify-content: center;
   -webkit-flex-direction: column;
   flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
   text-shadow: black 0 0 5px;
   text-align: center;
-  padding: 180px 15%;
   color: #eee;
 }
 @media (max-width: 980px) {
@@ -138,21 +192,117 @@ h1 {
   transform: scale(1.8, 1.8);
 }
 
-header {
-  position: absolute;
-  text-align: center;
-  text-transform: uppercase;
-  color: #eee;
-  margin-right: auto;
-  margin-left: auto;
-  right: 0;
-  left: 0;
+.bar {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuMCIgeTE9IjAuMCIgeDI9IjEuMCIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2RhZGFkYSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 0% 0%, 100% 100%, color-stop(0%, #ffffff), color-stop(100%, #dadada));
+  background-image: -moz-linear-gradient(top, #ffffff, #dadada);
+  background-image: -webkit-linear-gradient(top, #ffffff, #dadada);
+  background-image: linear-gradient(to bottom right, #ffffff, #dadada);
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-items: baseline;
+  align-items: baseline;
+  margin-top: 3em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #fff;
+  border: 1px solid #909090;
+  color: #333;
+  text-shadow: 0 1px 0 #909090;
 }
-header nav {
-  margin: 5px 20px;
+.bar a {
+  margin: 4px 15px;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -moz-animation: init-bar 1.3s;
+  -webkit-animation: init-bar 1.3s;
+  animation: init-bar 1.3s;
 }
-header a {
-  margin: 0 15px;
+.bar a:hover {
+  -moz-transform: scale(0.8, 0.8);
+  -ms-transform: scale(0.8, 0.8);
+  -webkit-transform: scale(0.8, 0.8);
+  transform: scale(0.8, 0.8);
+}
+@-moz-keyframes init-bar {
+  from {
+    margin: 0 50px;
+    opacity: 0;
+  }
+}
+@-webkit-keyframes init-bar {
+  from {
+    margin: 0 50px;
+    opacity: 0;
+  }
+}
+@keyframes init-bar {
+  from {
+    margin: 0 50px;
+    opacity: 0;
+  }
+}
+.github {
+  background-position: -74px 0;
+  height: 32px;
+  width: 32px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-repeat: no-repeat;
+}
+
+.linkedin {
+  background-position: -111px 0;
+  height: 32px;
+  width: 32px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-repeat: no-repeat;
+}
+
+.facebook {
+  background-position: -37px 0;
+  height: 32px;
+  width: 32px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-repeat: no-repeat;
+}
+
+.twitter {
+  background-position: -148px 0;
+  height: 32px;
+  width: 32px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-repeat: no-repeat;
+}
+
+.email {
+  background-position: 0 0;
+  height: 32px;
+  width: 32px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-repeat: no-repeat;
 }
 
 .logos-debian {
@@ -189,7 +339,6 @@ header a {
   box-shadow: black 0 0 22px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  padding: 180px 15%;
 }
 .linux-div ul {
   display: -webkit-flex;
@@ -200,11 +349,23 @@ header a {
   justify-content: center;
 }
 .linux-div li {
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
   margin: 10px;
-  transition: 0.3s;
+  position: relative;
 }
 .linux-div li:hover {
-  transform: rotate(-3deg) scale(0.9);
+  -moz-transform: scale(0.9, 0.9);
+  -ms-transform: scale(0.9, 0.9);
+  -webkit-transform: scale(0.9, 0.9);
+  transform: scale(0.9, 0.9);
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  -webkit-filter: saturate(6);
   filter: saturate(6);
 }
 .linux-div div {
@@ -238,9 +399,6 @@ header a {
 }
 .itens p {
   text-align: justify;
-}
-.itens p:first-letter {
-  font-size: 26.4px;
 }
 
 .linux {

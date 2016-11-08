@@ -3,7 +3,6 @@
 .linux-div {
     @include box-shadow($color-shadow 0 0 22px);
     @include open-sans-slim;
-    padding: 180px 15%;
 
     ul {
         @include display-flex;
@@ -12,13 +11,15 @@
     }
 
     li {
+        @include transition-duration(.3s);
         margin: 10px;
-        transition: 0.3s;
+        position: relative;
     }
 
     li:hover {
-        transform: rotate(-3deg) scale(0.9);
-        filter: saturate(6);
+        @include scale(0.9);
+        @include rotate(-3deg);
+        @include filter(saturate(6));
     }
 
     div {
@@ -49,37 +50,33 @@
 
     p {
         text-align: justify;
-
-        &:first-letter {
-            font-size: 1.2*$base-font-size;
-        }
     }
 }
 
 .linux {
-    @include sprite-text(tux);
+    @include sprite-logos-text(tux);
 }
 
 .gnu {
-    @include sprite-text(gnu);
+    @include sprite-logos-text(gnu);
 }
 
 .slackware {
-    @include sprite-text(slackware);
+    @include sprite-logos-text(slackware);
 }
 
 .debian {
-    @include sprite-text(debian);
+    @include sprite-logos-text(debian);
 }
 
 .fedora {
-    @include sprite-text(fedora);
+    @include sprite-logos-text(fedora);
 }
 
 .gentoo {
-    @include sprite-text(gentoo);
+    @include sprite-logos-text(gentoo);
 }
 
 .opensuse {
-    @include sprite-text(opensuse);
+    @include sprite-logos-text(opensuse);
 }
