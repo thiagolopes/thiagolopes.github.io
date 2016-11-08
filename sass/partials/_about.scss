@@ -47,11 +47,12 @@
         margin: 4px 15px;
         @include transition(0.1s);
         @include animation(init-bar 1.3s);
+
         &:hover {
             @include scale(0.8);
         }
     }
-    @include keyframes(init-bar){
+    @include keyframes(init-bar) {
         from {
             margin: 0 50px;
             opacity: 0;

@@ -65,8 +65,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-repeat: no-repeat;
 }
 
-.skills-sprite, .python, .django, .flask, .git, .html5, .css3, .sass, .compass, .bootstrap {
-  background-image: url('../img/skills-seea6bd60ab.png');
+.skills-sprite, .python, .django, .flask, .git, .html5, .css3, .sass, .compass, .bootstrap, .arduino {
+  background-image: url('../img/skills-s5e68160aa3.png');
   background-repeat: no-repeat;
 }
 
@@ -349,7 +349,7 @@ header a {
 }
 
 .python {
-  background-position: -1614px 0;
+  background-position: -1855px 0;
   height: 150px;
   width: 151px;
   text-indent: -119988px;
@@ -360,7 +360,7 @@ header a {
 }
 
 .django {
-  background-position: -692px 0;
+  background-position: -933px 0;
   height: 150px;
   width: 350px;
   text-indent: -119988px;
@@ -371,7 +371,7 @@ header a {
 }
 
 .flask {
-  background-position: -1062px 0;
+  background-position: -1303px 0;
   height: 150px;
   width: 236px;
   text-indent: -119988px;
@@ -382,7 +382,7 @@ header a {
 }
 
 .git {
-  background-position: -1318px 0;
+  background-position: -1559px 0;
   height: 150px;
   width: 150px;
   text-indent: -119988px;
@@ -393,7 +393,7 @@ header a {
 }
 
 .html5 {
-  background-position: -1488px 0;
+  background-position: -1729px 0;
   height: 150px;
   width: 106px;
   text-indent: -119988px;
@@ -404,7 +404,7 @@ header a {
 }
 
 .css3 {
-  background-position: -565px 0;
+  background-position: -806px 0;
   height: 150px;
   width: 107px;
   text-indent: -119988px;
@@ -415,7 +415,7 @@ header a {
 }
 
 .sass {
-  background-position: -1785px 0;
+  background-position: -2026px 0;
   height: 150px;
   width: 200px;
   text-indent: -119988px;
@@ -426,7 +426,7 @@ header a {
 }
 
 .compass {
-  background-position: -170px 0;
+  background-position: -411px 0;
   height: 63px;
   width: 375px;
   text-indent: -119988px;
@@ -437,9 +437,20 @@ header a {
 }
 
 .bootstrap {
-  background-position: 0 0;
+  background-position: -241px 0;
   height: 150px;
   width: 150px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-repeat: no-repeat;
+}
+
+.arduino {
+  background-position: 0 0;
+  height: 150px;
+  width: 221px;
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;

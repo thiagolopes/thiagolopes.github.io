@@ -1,35 +1,49 @@
-.habilidades{
+.habilidades {
     @include background(image-url("background.png"));
     color: $text-color;
-    li{
+
+    li {
         @include inline-block;
         margin: 25px 15px;
     }
 }
-.python{
+
+.python {
     @include sprite-skills-text(python);
 }
-.django{
+
+.django {
     @include sprite-skills-text(django);
 }
-.flask{
+
+.flask {
     @include sprite-skills-text(flask);
 }
-.git{
+
+.git {
     @include sprite-skills-text(git);
 }
-.html5{
+
+.html5 {
     @include sprite-skills-text(html5);
 }
-.css3{
+
+.css3 {
     @include sprite-skills-text(css3);
 }
-.sass{
+
+.sass {
     @include sprite-skills-text(sass);
 }
-.compass{
+
+.compass {
     @include sprite-skills-text(compass);
 }
-.bootstrap{
+
+.bootstrap {
     @include sprite-skills-text(bootstrap);
+}
+
+.arduino {
+    @include sprite-skills-text(arduino);
 }
