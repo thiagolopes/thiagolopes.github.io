@@ -1,0 +1,35 @@
+.habilidades{
+    @include background(image-url("background.png"));
+    color: $text-color;
+    li{
+        @include inline-block;
+        margin: 25px 15px;
+    }
+}
+.python{
+    @include sprite-skills-text(python);
+}
+.django{
+    @include sprite-skills-text(django);
+}
+.flask{
+    @include sprite-skills-text(flask);
+}
+.git{
+    @include sprite-skills-text(git);
+}
+.html5{
+    @include sprite-skills-text(html5);
+}
+.css3{
+    @include sprite-skills-text(css3);
+}
+.sass{
+    @include sprite-skills-text(sass);
+}
+.compass{
+    @include sprite-skills-text(compass);
+}
+.bootstrap{
+    @include sprite-skills-text(bootstrap);
+}

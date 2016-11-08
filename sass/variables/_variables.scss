@@ -19,18 +19,26 @@
     @include hide-text;
     background-repeat: no-repeat;
 }
+@mixin sprite-skills-text ($name) {
+     @include skills-sprite($name,true);
+    @include hide-text;
+    background-repeat: no-repeat;
+}
 $color-shadow: black;
 $text-color: #eee;
 $background-color: #fafafa;
 $base-font-size: 22px;
 $mq-mobile: 980px;
 $base-line-height: 1.7em;
-//logos varibles
+//logos variables
 $logos-spacing: 5px;
 $logos-layout: "smart";
 //social variables
 $social-spacing: 5px;
 $social-layout: "horizontal";
+//skils variables
+$skills-spacing: 20px;
+$skills-layout: "horizontal";
 // variaveis do bar info
 $gradiente-esquerda: darken(#f3f3f3,10);
 $color-bar: #fff;

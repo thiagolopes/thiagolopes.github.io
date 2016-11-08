@@ -65,6 +65,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-repeat: no-repeat;
 }
 
+.skills-sprite, .python, .django, .flask, .git, .html5, .css3, .sass, .compass, .bootstrap {
+  background-image: url('../img/skills-seea6bd60ab.png');
+  background-repeat: no-repeat;
+}
+
 html {
   font-size: 137.5%;
   line-height: 1.7em;
@@ -106,6 +111,11 @@ h1 {
 
 section {
   padding: 180px 15%;
+}
+
+h2 {
+  font-size: 44px;
+  padding-bottom: 1.2em;
 }
 
 header {
@@ -305,6 +315,138 @@ header a {
   background-repeat: no-repeat;
 }
 
+.formacao {
+  border-top: 1px solid #909090;
+  margin: auto;
+  text-align: center;
+  text-shadow: 0 1px 0 #909090;
+}
+.formacao h2:nth-of-type(2) {
+  padding-top: 1.2em;
+}
+.formacao li {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin: 10px 0;
+}
+.formacao li:nth-child(odd) {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 26.4px;
+}
+
+.habilidades {
+  background: url('../img/background.png?1478479042');
+  color: #eee;
+}
+.habilidades li {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin: 25px 15px;
+}
+
+.python {
+  background-position: -1614px 0;
+  height: 150px;
+  width: 151px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-repeat: no-repeat;
+}
+
+.django {
+  background-position: -692px 0;
+  height: 150px;
+  width: 350px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-repeat: no-repeat;
+}
+
+.flask {
+  background-position: -1062px 0;
+  height: 150px;
+  width: 236px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-repeat: no-repeat;
+}
+
+.git {
+  background-position: -1318px 0;
+  height: 150px;
+  width: 150px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-repeat: no-repeat;
+}
+
+.html5 {
+  background-position: -1488px 0;
+  height: 150px;
+  width: 106px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-repeat: no-repeat;
+}
+
+.css3 {
+  background-position: -565px 0;
+  height: 150px;
+  width: 107px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-repeat: no-repeat;
+}
+
+.sass {
+  background-position: -1785px 0;
+  height: 150px;
+  width: 200px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-repeat: no-repeat;
+}
+
+.compass {
+  background-position: -170px 0;
+  height: 63px;
+  width: 375px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-repeat: no-repeat;
+}
+
+.bootstrap {
+  background-position: 0 0;
+  height: 150px;
+  width: 150px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-repeat: no-repeat;
+}
+
 .logos-debian {
   background-position: -240px 0;
 }
@@ -334,9 +476,13 @@ header a {
 }
 
 .linux-div {
-  -moz-box-shadow: black 0 0 22px;
-  -webkit-box-shadow: black 0 0 22px;
-  box-shadow: black 0 0 22px;
+  text-shadow: 0 1px 0 #909090;
+}
+.linux-div h2 {
+  text-align: center;
+  margin: auto;
+}
+.linux-div p {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }

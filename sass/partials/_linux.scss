@@ -1,8 +1,16 @@
 @include all-logos-sprites;
 
 .linux-div {
-    @include box-shadow($color-shadow 0 0 22px);
-    @include open-sans-slim;
+    text-shadow: 0 1px 0 $border-color;
+
+    h2 {
+        text-align: center;
+        margin: auto;
+    }
+
+    p {
+        @include open-sans-slim;
+    }
 
     ul {
         @include display-flex;
