@@ -158,7 +158,7 @@ header a {
 }
 
 .about {
-  background: url('../img/background.png?1478730149');
+  background: url('../img/background.png?1478730149') repeat fixed 100%;
   -moz-box-shadow: black 0 0 100px inset;
   -webkit-box-shadow: black 0 0 100px inset;
   box-shadow: black 0 0 100px inset;

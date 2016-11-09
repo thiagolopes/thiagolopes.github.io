@@ -46,6 +46,6 @@ $text-color-bar: #333;
 
 // background
 @mixin add-bg {
-    @include background(image-url("background.png"));
+    @include background(image-url("background.png") repeat fixed 100%);
     @include box-shadow($color-shadow 0 0 100px inset);
 }
