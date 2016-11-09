@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+@import url("https://fonts.googleapis.com/css?family=Courgette");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -115,18 +116,18 @@ section {
 h2 {
   font-size: 44px;
   padding-bottom: 1.2em;
+  font-family: 'Courgette', cursive;
 }
 
 header {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  text-shadow: 0 1px 0 #909090;
-  position: absolute;
+  font-family: 'Courgette', cursive;
+  text-shadow: 0 1px 0 black;
+  position: fixed;
   text-align: center;
   text-transform: uppercase;
   color: #eee;
-  margin-right: auto;
-  margin-left: auto;
   right: 0;
   left: 0;
 }
@@ -135,6 +136,12 @@ header nav {
 }
 header a {
   margin: 0 15px;
+}
+@media (max-width: 980px) {
+  header {
+    right: 0;
+    bottom: 0;
+  }
 }
 
 .social-email {

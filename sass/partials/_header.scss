@@ -1,20 +1,22 @@
 header {
     @include open-sans-slim;
-    text-shadow: 0 1px 0 $border-color;
-    position: absolute;
+    font-family: 'Courgette', cursive;
+    text-shadow: 0 1px 0 $color-shadow;
+    position: fixed;
     text-align: center;
     text-transform: uppercase;
     color: $text-color;
-    margin-right: auto;
-    margin-left: auto;
     right: 0;
     left: 0;
-
     nav {
         margin: 5px 20px;
     }
 
     a {
         margin: 0 15px;
+    }
+    @media(max-width: $mq-mobile) {
+        right:0;
+        bottom: 0;
     }
 }
