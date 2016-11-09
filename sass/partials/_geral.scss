@@ -4,7 +4,7 @@ body {
     @include open-sans-regular;
     background-color: $background-color;
     @media(max-width: $mq-mobile) {
-         @include adjust-font-size-to(28px);
+        //  @include adjust-font-size-to(28px);
     }
 }
 
@@ -19,7 +19,11 @@ h1 {
 }
 
 section {
-    padding: 180px 15%;
+    padding: 130px 15%;
+    @media(max-width: $mq-mobile) {
+        // padding: 180px 3%;
+        text-align: justify;
+    }
 }
 
 h2 {

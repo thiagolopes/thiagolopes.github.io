@@ -11,18 +11,16 @@
     font-weight: 300;
 }
 @mixin sprite-logos-text ($name) {
-     @include logos-sprite($name,true);
+    @include logos-sprite($name,true);
     @include hide-text;
 }
 @mixin sprite-social-text ($name) {
-     @include social-sprite($name,true);
+    @include social-sprite($name,true);
     @include hide-text;
-    background-repeat: no-repeat;
 }
 @mixin sprite-skills-text ($name) {
-     @include skills-sprite($name,true);
+    @include skills-sprite($name,true);
     @include hide-text;
-    background-repeat: no-repeat;
 }
 $color-shadow: black;
 $text-color: #eee;

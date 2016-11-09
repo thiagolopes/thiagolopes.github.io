@@ -3,16 +3,11 @@
 .about {
     @include background(image-url("background.png"));
     @include display-flex;
-    @include justify-content(center);
     @include flex-direction(column);
     @include align-items(center);
     @include text-shadow($color-shadow 0 0 5px);
     text-align: center;
     color: $text-color;
-    @media(max-width: $mq-mobile) {
-        padding: 180px 10%;
-        text-align: justify;
-    }
 
     img {
         @include box-shadow($color-shadow 0 0 22px);
@@ -33,8 +28,6 @@
     @include background-image(linear-gradient(to bottom right, $color-bar, $gradiente-esquerda));
     @include border-radius(5px);
     @include display-flex;
-    @include justify-content(space-around);
-    @include align-items(baseline);
     margin-top: 3em;
     padding-top: 10px;
     padding-bottom: 10px;

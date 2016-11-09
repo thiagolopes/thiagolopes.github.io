@@ -80,12 +80,6 @@ body {
   font-weight: 400;
   background-color: #fafafa;
 }
-@media (max-width: 980px) {
-  body {
-    font-size: 1.27273em;
-    line-height: 1.09286em;
-  }
-}
 
 a {
   color: inherit;
@@ -110,7 +104,12 @@ h1 {
 }
 
 section {
-  padding: 180px 15%;
+  padding: 130px 15%;
+}
+@media (max-width: 980px) {
+  section {
+    text-align: justify;
+  }
 }
 
 h2 {
@@ -119,6 +118,9 @@ h2 {
 }
 
 header {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  text-shadow: 0 1px 0 #909090;
   position: absolute;
   text-align: center;
   text-transform: uppercase;
@@ -127,8 +129,6 @@ header {
   margin-left: auto;
   right: 0;
   left: 0;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
 }
 header nav {
   margin: 5px 20px;
@@ -161,8 +161,6 @@ header a {
   background: url('../img/background.png?1478479042');
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
   -webkit-flex-direction: column;
   flex-direction: column;
   -webkit-align-items: center;
@@ -170,12 +168,6 @@ header a {
   text-shadow: black 0 0 5px;
   text-align: center;
   color: #eee;
-}
-@media (max-width: 980px) {
-  .about {
-    padding: 180px 10%;
-    text-align: justify;
-  }
 }
 .about img {
   -moz-box-shadow: black 0 0 22px;
@@ -214,10 +206,6 @@ header a {
   border-radius: 5px;
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: space-around;
-  justify-content: space-around;
-  -webkit-align-items: baseline;
-  align-items: baseline;
   margin-top: 3em;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -268,7 +256,6 @@ header a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-repeat: no-repeat;
 }
 
 .linkedin {
@@ -279,7 +266,6 @@ header a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-repeat: no-repeat;
 }
 
 .facebook {
@@ -290,7 +276,6 @@ header a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-repeat: no-repeat;
 }
 
 .twitter {
@@ -301,7 +286,6 @@ header a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-repeat: no-repeat;
 }
 
 .email {
@@ -312,12 +296,10 @@ header a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-repeat: no-repeat;
 }
 
 .formacao {
   border-top: 1px solid #909090;
-  margin: auto;
   text-align: center;
   text-shadow: 0 1px 0 #909090;
 }
@@ -340,12 +322,17 @@ header a {
   color: #eee;
 }
 .habilidades li {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
   margin: 25px 15px;
+}
+.habilidades ul {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  align-items: center;
 }
 
 .python {
@@ -356,7 +343,6 @@ header a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-repeat: no-repeat;
 }
 
 .django {
@@ -367,7 +353,6 @@ header a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-repeat: no-repeat;
 }
 
 .flask {
@@ -378,7 +363,6 @@ header a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-repeat: no-repeat;
 }
 
 .git {
@@ -389,7 +373,6 @@ header a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-repeat: no-repeat;
 }
 
 .html5 {
@@ -400,7 +383,6 @@ header a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-repeat: no-repeat;
 }
 
 .css3 {
@@ -411,7 +393,6 @@ header a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-repeat: no-repeat;
 }
 
 .sass {
@@ -422,7 +403,6 @@ header a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-repeat: no-repeat;
 }
 
 .compass {
@@ -433,7 +413,6 @@ header a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-repeat: no-repeat;
 }
 
 .bootstrap {
@@ -444,7 +423,6 @@ header a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-repeat: no-repeat;
 }
 
 .arduino {
@@ -455,7 +433,6 @@ header a {
   overflow: hidden;
   text-align: left;
   text-transform: capitalize;
-  background-repeat: no-repeat;
 }
 
 .logos-debian {
@@ -493,17 +470,17 @@ header a {
   text-align: center;
   margin: auto;
 }
-.linux-div p {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-}
 .linux-div ul {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-justify-content: center;
-  justify-content: center;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-flex-basis: 50%;
+  flex-basis: 50%;
 }
 .linux-div li {
   -moz-transition-duration: 0.3s;
@@ -511,7 +488,6 @@ header a {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   margin: 10px;
-  position: relative;
 }
 .linux-div li:hover {
   -moz-transform: scale(0.9, 0.9);
@@ -528,34 +504,36 @@ header a {
 .linux-div div {
   display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-align-self: center;
-  align-self: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-align-items: center;
+  align-items: center;
 }
 @media (max-width: 980px) {
-  .linux-div {
-    padding: 180px 0;
-  }
-  .linux-div div {
-    -webkit-flex-direction: column;
-    flex-direction: column;
-    -webkit-align-self: center;
-    align-self: center;
-  }
-  .linux-div .itens {
-    width: 80%;
+  .linux-div p:first-child {
+    padding-top: 50px;
   }
   .linux-div p {
-    padding-top: 50px;
+    padding-top: 10px;
+  }
+  .linux-div ul {
+    -webkit-flex-basis: 100%;
+    flex-basis: 100%;
   }
 }
 
-.itens {
-  width: 50%;
-}
-.itens p {
+.paragrafos {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  -webkit-flex-basis: 50%;
+  flex-basis: 50%;
   text-align: justify;
+}
+@media (max-width: 980px) {
+  .paragrafos {
+    -webkit-flex-basis: 100%;
+    flex-basis: 100%;
+  }
 }
 
 .linux {

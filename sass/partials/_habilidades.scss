@@ -3,8 +3,14 @@
     color: $text-color;
 
     li {
-        @include inline-block;
         margin: 25px 15px;
+    }
+
+    ul {
+        @include display-flex;
+        @include flex-wrap(wrap);
+        @include justify-content(space-around);
+        @include align-items(center);
     }
 }
 
