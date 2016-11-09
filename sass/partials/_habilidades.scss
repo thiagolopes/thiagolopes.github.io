@@ -1,5 +1,4 @@
 .habilidades {
-    @include background(image-url("background.png"));
     color: $text-color;
 
     li {
@@ -52,4 +51,7 @@
 
 .arduino {
     @include sprite-skills-text(arduino);
+}
+.javascript {
+    @include sprite-skills-text(javascript);
 }

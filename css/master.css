@@ -65,8 +65,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-repeat: no-repeat;
 }
 
-.skills-sprite, .python, .django, .flask, .git, .html5, .css3, .sass, .compass, .bootstrap, .arduino {
-  background-image: url('../img/skills-s5e68160aa3.png');
+.skills-sprite, .python, .django, .flask, .git, .html5, .css3, .sass, .compass, .bootstrap, .arduino, .javascript {
+  background-image: url('../img/skills-s14f41230d2.png');
   background-repeat: no-repeat;
 }
 
@@ -158,7 +158,10 @@ header a {
 }
 
 .about {
-  background: url('../img/background.png?1478479042');
+  background: url('../img/background.png?1478730149');
+  -moz-box-shadow: black 0 0 100px inset;
+  -webkit-box-shadow: black 0 0 100px inset;
+  box-shadow: black 0 0 100px inset;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
@@ -318,7 +321,6 @@ header a {
 }
 
 .habilidades {
-  background: url('../img/background.png?1478479042');
   color: #eee;
 }
 .habilidades li {
@@ -336,7 +338,7 @@ header a {
 }
 
 .python {
-  background-position: -1855px 0;
+  background-position: -2025px 0;
   height: 150px;
   width: 151px;
   text-indent: -119988px;
@@ -396,7 +398,7 @@ header a {
 }
 
 .sass {
-  background-position: -2026px 0;
+  background-position: -2196px 0;
   height: 150px;
   width: 200px;
   text-indent: -119988px;
@@ -429,6 +431,16 @@ header a {
   background-position: 0 0;
   height: 150px;
   width: 221px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.javascript {
+  background-position: -1855px 0;
+  height: 150px;
+  width: 150px;
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;

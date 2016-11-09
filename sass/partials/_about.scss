@@ -1,7 +1,7 @@
 @include all-social-sprites;
 
 .about {
-    @include background(image-url("background.png"));
+    @include add-bg;
     @include display-flex;
     @include flex-direction(column);
     @include align-items(center);

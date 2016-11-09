@@ -22,6 +22,7 @@
     @include skills-sprite($name,true);
     @include hide-text;
 }
+//variables
 $color-shadow: black;
 $text-color: #eee;
 $background-color: #fafafa;
@@ -42,3 +43,9 @@ $gradiente-esquerda: darken(#f3f3f3,10);
 $color-bar: #fff;
 $border-color: #909090;
 $text-color-bar: #333;
+
+// background
+@mixin add-bg {
+    @include background(image-url("background.png"));
+    @include box-shadow($color-shadow 0 0 100px inset);
+}
