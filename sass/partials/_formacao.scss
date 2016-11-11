@@ -1,3 +1,5 @@
+.new {}
+
 .formacao {
     border-top: 1px solid $border-color;
     text-align: center;
@@ -10,10 +12,22 @@
     li {
         @include open-sans-slim;
         margin: 10px 0;
+        position: relative;
     }
 
     li:nth-child(odd) {
         @include open-sans-bold;
         font-size: 1.2*$base-font-size;
+    }
+
+    .cursos li:last-child {
+        &::after {
+            position: absolute;
+            content: "New";
+            margin-left: 10px;
+            font-family: 'Courgette', cursive;
+            font-weight: normal;
+            @include new-btn;
+        }
     }
 }

@@ -49,3 +49,13 @@ $text-color-bar: #333;
     @include background(image-url("background.png") repeat fixed 100%);
     @include box-shadow($color-shadow 0 0 100px inset);
 }
+
+@mixin new-btn {
+    @include background-image(linear-gradient(to bottom right, darken(#55c1ec,10), darken(#3689e6,10) 150%));
+    @include border-radius(5px);
+    padding: 5px 15px;
+    background-color: #55c1ec;
+    border: 1px solid #28618c;
+    color: #004166;
+    text-shadow: 0 1px 0 #80c5f0;
+}
