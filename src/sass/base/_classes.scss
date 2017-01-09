@@ -1,0 +1,41 @@
+.foto {
+    @include prefix((border-radius: 100%));
+}
+
+.about {
+    @include padding-top-bottom(4em);
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    justify-content: center;
+
+    p {
+        @include padding-top-bottom(2em);
+    }
+}
+
+.social {
+    @include padding-top-bottom(2em);
+
+    a {
+        @include prefix((text-decoration: none));
+
+        @include padding-right-left(3px);
+
+        text-indent: -9999999px;
+        color: $cor-links;
+        font-size: 3em;
+        transition: 0.3s;
+
+        &:hover {
+            color: $cor-links-hover;
+        }
+    }
+
+    span {
+        position: absolute;
+    }
+}

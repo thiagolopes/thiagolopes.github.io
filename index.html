@@ -1,92 +1,118 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-    <meta charset="utf-8">
-    <title>Thiago Lopes - Developer</title>
-    <link rel="stylesheet" href="./dist/css/master.css" media="screen" title="no title">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Thiago Lopes - Developer</title>
+        <link rel="stylesheet" href="./dist/css/master.css" media="screen" title="no title">
+        <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
+    </head>
 
-<body>
-    <!--
-    <header>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Sobre</a>
-            <a href="#">Formação</a>
-        </nav>
-    </header>
-    -->
-    <section class="about">
+    <body class="grid-parent">
+        <main>
+            <section class="about grid-container">
+                <div class="grid-50">
+                    <img class="foto" src="dist/img/me.jpg" alt="Minha foto">
+                </div>
+                <div class="social grid-50">
+                    <a href="https://github.com/thiagolopes" class="socicon-github"><span>Github</span></a>
+                    <a href="https://br.linkedin.com/in/thiago-lopes-dev" class="socicon-linkedin"><span>Linkedin</span></a>
+                    <a href="https://twitter.com/Thiagolops_" class="socicon-twitter"><span>Twitter</span></a>
+                    <a href="mailto:thiagolopes@protonmail.com" class="socicon-mail"><span>E-Mail</span></a>
+                </div>
+            </section>
 
-        <img src="img/me.jpg" alt="Minha foto">
-        <p>
-            Me chamo Thiago Lopes, tenho 21 anos e sou estudante de Engenharia da Computação na Universidade de Sorocaba.
-        </p>
-        <div class="bar social">
-            <a href="https://github.com/thiagolopes" class="github">Github</a>
-            <a href="https://br.linkedin.com/in/thiago-lopes-dev" class="linkedin">Linkedin</a>
-            <a href="https://twitter.com/Thiagolops_" class="twitter">Twitter</a>
-            <a href="#" class="facebook">Facebook</a>
-            <a href="mailto:thiagolopes@protonmail.com" class="email">E-mail</a>
-        </div>
-    </section>
-    <section class="formacao">
-        <h2>Formação</h2>
-        <ul>
-            <li>Engenharia da Computação</li>
-            <li>Universisade de Sorocaba, Bolsista pelo <a href="#">ProUni</a>, Conclusão em 2018, Duração 5 anos</li>
-            <li>Técnico em Informatica</li>
-            <li>ETEC Ourinhos, Conclusão em 2013, Duração 1 ano e meio</li>
-        </ul>
-        <h2>Cursos</h2>
-        <ul class="cursos">
-            <li><a href="https://cursos.alura.com.br/user/thiagolops/course/avancando-html-css/formalCertificate">HTML5 e CSS3 Avançado</a></li>
-            <li><a href="https://cursos.alura.com.br/user/thiagolops/course/design-patterns-python/formalCertificate">Design Patterns com Python</a></li>
-            <li><a href="https://cursos.alura.com.br/user/thiagolops/course/introducao-ao-django/formalCertificate">Django</a></li>
-            <li><a href="https://cursos.alura.com.br/user/thiagolops/course/sass/formalCertificate">SASS e Compass</a></li>
-            <li><a href="https://cursos.alura.com.br/user/thiagolops/course/a-linguagem-javascript/formalCertificate">JavaScript Básico</a></li>
-        </ul>
-    </section>
-    <section class="about habilidades">
-        <h2>Habilidades</h2>
-        <ul>
-            <li class="python">Python</li>
-            <li class="django">Django</li>
-            <li class="git">Git</li>
-            <li class="flask">Flask</li>
-            <li class="css3">CSS3</li>
-            <li class="html5">HTML5</li>
-            <li class="sass">SASS</li>
-            <li class="javascript">JavaScript</li>
-            <li class="compass">Compass</li>
-            <li class="bootstrap">Bootstrap</li>
-            <li class="arduino">Arduino</li>
-        </ul>
-    </section>
-    <section class="linux-div">
-        <h2>Linux</h2>
-        <div>
-            <ul>
-                <li class="gnu">GNU</li>
-                <li class="linux">Linux</li>
-                <li class="slackware">Slackware</li>
-                <li class="debian">Debian</li>
-                <li class="fedora">Fedora</li>
-                <li class="gentoo">Gentoo</li>
-                <li class="opensuse">openSuse</li>
-            </ul>
-            <div class="paragrafos">
-                <p>
-                    Amante da filosofia <a href="https://www.gnu.org/">GNU</a> e usuário de <a href="https://www.kernel.org/">Linux</a>. Sempre procurei utilizar, disseminar e cooperar com software livre, princípios que venho aplicando a 9 anos.
-                </p>
-                <p>
-                    Utilizo no meu dia a dia o <a href="http://www.slackware.com/">Slackware</a>. Contudo tenho conhecimento e prática em todas as distribuições mais usadas no mercado como <a href="https://www.debian.org/">Debian</a>,
-                    <a href="https://getfedora.org/">Fedora</a>, <a href="https://www.opensuse.org/">openSuse</a> e até mesmo <a href="https://www.gentoo.org/">Gentoo</a>.
-                </p>
-            </div>
-        </div>
-    </section>
-</body>
+            <section class="formacao grid-container">
+                <div class="grid-100">
+                    <h2>Olá!</h2>
+                    <p>
+                        Me chamo Thiago Lopes, tenho 21 anos e sou estudante de Engenharia da Computação na Universidade de Sorocaba.
+                    </p>
+                </div>
+                <div class="grid-100">
+                    <h2>Formação</h2>
+                    <ul>
+                        <li>Engenharia da Computação</li>
+                        <li>Universisade de Sorocaba, Bolsista pelo <a href="#">ProUni</a>, Conclusão em 2018, Duração 5 anos</li>
+                        <li>Técnico em Informatica</li>
+                        <li>ETEC Ourinhos, Conclusão em 2013, Duração 1 ano e meio</li>
+                    </ul>
+
+                </div>
+
+                <div class="grid-50">
+                    <h2>Cursos</h2>
+                    <ul class="cursos">
+                        <li><a href="https://cursos.alura.com.br/user/thiagolops/course/avancando-html-css/formalCertificate">HTML5 e CSS3 Avançado</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/thiagolops/course/design-patterns-python/formalCertificate">Design Patterns com Python</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/thiagolops/course/introducao-ao-django/formalCertificate">Django</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/thiagolops/course/sass/formalCertificate">SASS e Compass</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/thiagolops/course/a-linguagem-javascript/formalCertificate">JavaScript Básico</a></li>
+                    </ul>
+                </div>
+
+                <div class="grid-50">
+                    <h2>Experiencia</h2>
+                    <ul>
+                        <li>
+                            <p>BirminD Automação</p>
+                            <p>StartUp voltada a Otimização industrial</p>
+                            <p>Cargo: FullStack Developer</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </section>
+
+            <section class="habilidades grid-container">
+                <div class="grid-100">
+
+                    <h2>Habilidades</h2>
+                    <ul>
+                        <li class="python">Python</li>
+                        <li class="django">Django</li>
+                        <li class="git">Git</li>
+                        <li class="flask">Flask</li>
+                        <li class="css3">CSS3</li>
+                        <li class="html5">HTML5</li>
+                        <li class="sass">SASS</li>
+                        <li class="javascript">JavaScript</li>
+                        <li class="jquery">jQuery</li>
+                        <li class="bootstrap">Bootstrap</li>
+                        <li class="arduino">Arduino</li>
+                    </ul>
+
+                </div>
+            </section>
+
+            <section class="linux-div grid-container">
+
+                <div class="grid-50">
+                    <h2>Linux</h2>
+                    <ul>
+                        <li class="gnu">GNU</li>
+                        <li class="linux">Linux</li>
+                        <li class="slackware">Slackware</li>
+                        <li class="debian">Debian</li>
+                        <li class="fedora">Fedora</li>
+                        <li class="gentoo">Gentoo</li>
+                        <li class="opensuse">openSuse</li>
+                    </ul>
+                </div>
+
+                <div class="paragrafos grid-50">
+                    <p>
+                        Amante da filosofia <a href="https://www.gnu.org/">GNU</a> e usuário de <a href="https://www.kernel.org/">Linux</a>. Sempre procurei utilizar, disseminar e cooperar com software livre, princípios que venho aplicando a 9 anos.
+                    </p>
+                    <p>
+                        Utilizo no meu dia a dia o <a href="http://www.slackware.com/">Slackware</a>. Contudo tenho conhecimento e prática em todas as distribuições mais usadas no mercado como <a href="https://www.debian.org/">Debian</a>,
+                        <a href="https://getfedora.org/">Fedora</a>, <a href="https://www.opensuse.org/">openSuse</a> e até mesmo <a href="https://www.gentoo.org/">Gentoo</a>.
+                    </p>
+                </div>
+
+            </section>
+        </main>
+    </body>
 
 </html>
