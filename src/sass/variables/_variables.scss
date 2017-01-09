@@ -1,6 +1,10 @@
 $background-body: #FFF;
 $cor-links: rgba(0,0,0,0.8);
 $cor-links-hover: #DDDDDD;
+$cor-links-padrao: #1EAEDB;
+
+$cor1-gradient: #141E30;
+$cor2-gradient: #243B55;
 
 @mixin padding-top-bottom ($medida){
     padding-top: $medida;
@@ -24,7 +28,7 @@ $cor-links-hover: #DDDDDD;
 /// @param {Map} $declarations - Declarations to prefix
 /// @param {List} $prefixes (()) - List of prefixes to print
 @mixin prefix($declarations) {
-    $prefixes: webkit moz ms o;
+    $prefixes: webkit moz;
     @each $property, $value in $declarations {
         @each $prefix in $prefixes {
             #{"-" + $prefix + "-" + $property}: $value;
@@ -74,4 +78,11 @@ $cor-links-hover: #DDDDDD;
 		font-weight: $weight;
 		src: $src;
 	}
+}
+
+// box-shadow
+
+@mixin box-shadow ($valores, $arg){
+    -webkit-box-shadow: $valores, $arg;
+    -moz-box-shadow: $valores, $arg;
 }

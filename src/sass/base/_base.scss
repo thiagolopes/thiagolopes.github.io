@@ -1,31 +1,51 @@
 * {
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-body{
+header {
+    @include padding-top-bottom(1em);
+
+    background: $cor1-gradient;
+    background: -webkit-linear-gradient(to left, $cor1-gradient, $cor2-gradient);
+    background: linear-gradient(to left, $cor1-gradient, $cor2-gradient);
+    font-weight: 300;
+    color: $cor-links-hover;
+    line-height: 2.3em;
+}
+
+body {
     background-color: $background-body;
     font-size: 18px;
-    font-family: "Raleway";
+    font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
+    font-weight: 300;
 }
 
-h1{
+h1 {
+    font-size: 2.2em;
+}
+
+h3 {
     font-size: 2em;
+    line-height: 1.25;
+    letter-spacing: .1em;
 }
 
-h2{
-    font-size: 1.7em;
+h2 {
+    font-size: 1.1em;
 }
 
-h3{
-    font-size: 1.4em;
-}
-
-img{
+img {
     position: relative;
     width: 50%;
     height: 50%;
 }
 
+section {
+    @include padding-top-bottom(1em);
+}
 
+a {
+    color: $cor-links-padrao;
+}

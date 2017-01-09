@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -891,31 +891,52 @@ table {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+header {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background: #141E30;
+  background: -webkit-linear-gradient(to left, #141E30, #243B55);
+  background: linear-gradient(to left, #141E30, #243B55);
+  font-weight: 300;
+  color: #DDDDDD;
+  line-height: 2.3em; }
+
 body {
   background-color: #FFF;
   font-size: 18px;
-  font-family: "Raleway"; }
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
+  font-weight: 300; }
 
 h1 {
-  font-size: 2em; }
-
-h2 {
-  font-size: 1.7em; }
+  font-size: 2.2em; }
 
 h3 {
-  font-size: 1.4em; }
+  font-size: 2em;
+  line-height: 1.25;
+  letter-spacing: .1em; }
+
+h2 {
+  font-size: 1.1em; }
 
 img {
   position: relative;
   width: 50%;
   height: 50%; }
 
+section {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+
+a {
+  color: #1EAEDB; }
+
 .foto {
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
-  -ms-border-radius: 100%;
-  -o-border-radius: 100%;
-  border-radius: 100%; }
+  border-radius: 100%;
+  -webkit-box-shadow: 0 0 4px 4px #DDDDDD;
+  -moz-box-shadow: 0 0 4px 4px #DDDDDD;
+  box-shadow: 0 0 4px 4px #DDDDDD; }
 
 .about {
   padding-top: 4em;
@@ -936,8 +957,6 @@ img {
   .social a {
     -webkit-text-decoration: none;
     -moz-text-decoration: none;
-    -ms-text-decoration: none;
-    -o-text-decoration: none;
     text-decoration: none;
     padding-right: 3px;
     padding-left: 3px;
@@ -946,7 +965,8 @@ img {
     font-size: 3em;
     transition: 0.3s; }
     .social a:hover {
-      color: #DDDDDD; }
+      color: #DDDDDD;
+      text-shadow: 0 0 2px black; }
   .social span {
     position: absolute; }
 

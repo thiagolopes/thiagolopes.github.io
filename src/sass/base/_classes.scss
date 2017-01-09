@@ -1,6 +1,8 @@
 .foto {
     @include prefix((border-radius: 100%));
+    @include prefix((box-shadow: 0 0 4px 4px $cor-links-hover));
 }
+
 
 .about {
     @include padding-top-bottom(4em);
@@ -32,6 +34,7 @@
 
         &:hover {
             color: $cor-links-hover;
+            text-shadow: 0 0 2px black;
         }
     }
 
