@@ -20,6 +20,7 @@ body {
     font-size: 18px;
     font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial;
     font-weight: 300;
+    line-height: 1.5em;
 }
 
 h1 {
@@ -27,13 +28,17 @@ h1 {
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 2.2em;
     line-height: 1.25;
     letter-spacing: .1em;
 }
 
 h2 {
     font-size: 1.1em;
+}
+
+hr {
+    color: $cor-links-hover;
 }
 
 img {

@@ -1,12 +1,11 @@
 .foto {
     @include prefix((border-radius: 100%));
+
     @include prefix((box-shadow: 0 0 4px 4px $cor-links-hover));
 }
 
-
 .about {
-    @include padding-top-bottom(4em);
-
+    padding-top: 4em;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -27,18 +26,40 @@
 
         @include padding-right-left(3px);
 
-        text-indent: -9999999px;
         color: $cor-links;
         font-size: 3em;
         transition: 0.3s;
+        position: relative;
 
-        &:hover {
-            color: $cor-links-hover;
-            text-shadow: 0 0 2px black;
+        @media (min-width: 1025px) {
+            &:hover {
+                color: $cor-links-hover;
+                text-shadow: 0 0 2px black;
+                text-indent: 0;
+
+                & span {
+                    visibility: visible;
+                    display: inline-block;
+                }
+            }
         }
     }
 
     span {
+        @include padding-right-left(5px);
+
+        @include padding-top-bottom(5px);
+
+        @include prefix((border-radius: 4px));
+
         position: absolute;
+        display: none;
+        left: -.5em;
+        top: 2.6em;
+        background-color: $cor-links;
+        visibility: hidden;
+        color: #FFF;
+        font-size: 0.4em;
+        text-shadow: none;
     }
 }
