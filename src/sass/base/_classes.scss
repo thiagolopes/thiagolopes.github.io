@@ -1,3 +1,4 @@
+//======= FOTO E SOBRE ======
 .foto {
     @include prefix((border-radius: 100%));
 
@@ -12,6 +13,7 @@
     text-align: center;
     height: 100%;
     justify-content: center;
+    margin: auto auto;
 
     p {
         @include padding-top-bottom(2em);
@@ -27,39 +29,49 @@
         @include padding-right-left(3px);
 
         color: $cor-links;
-        font-size: 3em;
+        font-size: 2em;
         transition: 0.3s;
         position: relative;
 
         @media (min-width: 1025px) {
+            font-size: 3em;
+
             &:hover {
-                color: $cor-links-hover;
-                text-shadow: 0 0 2px black;
                 text-indent: 0;
 
-                & span {
+                span {
                     visibility: visible;
                     display: inline-block;
                 }
             }
         }
     }
+}
 
-    span {
-        @include padding-right-left(5px);
+span {
+    @include padding-right-left(5px);
 
-        @include padding-top-bottom(5px);
+    @include padding-top-bottom(5px);
 
-        @include prefix((border-radius: 4px));
+    @include prefix((border-radius: 4px));
 
-        position: absolute;
-        display: none;
-        left: -.5em;
-        top: 2.6em;
-        background-color: $cor-links;
-        visibility: hidden;
-        color: #FFF;
-        font-size: 0.4em;
-        text-shadow: none;
-    }
+    position: absolute;
+    display: none;
+    left: -.5em;
+    top: 2.6em;
+    background-color: $cor-links;
+    visibility: hidden;
+    color: #FFF;
+    font-size: 0.4em;
+    text-shadow: none;
+}
+
+
+//=========== LISTA HABILIDADES ===========
+
+.lista-dev {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 100px;
 }

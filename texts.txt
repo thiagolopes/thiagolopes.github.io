@@ -1,0 +1,57 @@
+                <div class="grid-50">
+                    <h3>Cursos</h3>
+                    <ul class="cursos">
+                        <li><a href="https://cursos.alura.com.br/user/thiagolops/course/avancando-html-css/formalCertificate">HTML5 e CSS3 Avançado</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/thiagolops/course/design-patterns-python/formalCertificate">Design Patterns com Python</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/thiagolops/course/introducao-ao-django/formalCertificate">Django</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/thiagolops/course/sass/formalCertificate">SASS e Compass</a></li>
+                        <li><a href="https://cursos.alura.com.br/user/thiagolops/course/a-linguagem-javascript/formalCertificate">JavaScript Básico</a></li>
+                    </ul>
+                </div>
+
+
+
+========================
+
+
+                <div class="grid-50">
+                    <h3>Experiencia</h3>
+                    <ul>
+                        <li>
+                            <p>BirminD Automação</p>
+                            <p>StartUp voltada a Otimização industrial</p>
+                            <p>Cargo: FullStack Developer</p>
+                        </li>
+                    </ul>
+                </div>
+
+
+=========================
+
+            <section class="linux-div grid-container">
+
+                <div class="grid-50">
+                    <h3>Linux</h3>
+                    <ul>
+                        <li class="gnu">GNU</li>
+                        <li class="linux">Linux</li>
+                        <li class="slackware">Slackware</li>
+                        <li class="debian">Debian</li>
+                        <li class="fedora">Fedora</li>
+                        <li class="gentoo">Gentoo</li>
+                        <li class="opensuse">openSuse</li>
+                    </ul>
+                </div>
+
+                <div class="paragrafos grid-50">
+                    <p>
+                        Amante da filosofia <a href="https://www.gnu.org/">GNU</a> e usuário de <a href="https://www.kernel.org/">Linux</a>. Sempre procurei utilizar, disseminar e cooperar com software livre, princípios que venho aplicando a 9 anos.
+                    </p>
+                    <p>
+                        Utilizo no meu dia a dia o <a href="http://www.slackware.com/">Slackware</a>. Contudo tenho conhecimento e prática em todas as distribuições mais usadas no mercado como <a href="https://www.debian.org/">Debian</a>,
+                        <a href="https://getfedora.org/">Fedora</a>, <a href="https://www.opensuse.org/">openSuse</a> e até mesmo <a href="https://www.gentoo.org/">Gentoo</a>.
+                    </p>
+                </div>
+
+            </section>
+

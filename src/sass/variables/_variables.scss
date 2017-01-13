@@ -1,28 +1,30 @@
-$background-body: #FFF;
-$cor-links: rgba(0,0,0,0.8);
-$cor-links-hover: #DDDDDD;
-$cor-links-padrao: #1EAEDB;
+$background-body: #F1F1F1;
+$cor-links: #5C616C;
+$cor-links-hover: #EFF0F2;
+$cor-links-padrao: #6DBADA;
 
 $cor-panel: #F5F6F7;
 
 $cor1-gradient: #141E30;
 $cor2-gradient: #243B55;
 
-@mixin padding-top-bottom ($medida){
+$cor-cinza: #F1F1F1;
+
+@mixin padding-top-bottom($medida) {
     padding-top: $medida;
     padding-bottom: $medida;
 }
 
-@mixin padding-right-left ($medida){
+@mixin padding-right-left($medida) {
     padding-right: $medida;
     padding-left: $medida;
 }
 
 @mixin image-replace($imageURL) {
- background: url($imageURL) no-repeat;
- text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+    background: url($imageURL) no-repeat;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 /// Mixin to prefix several properties at once
@@ -31,6 +33,7 @@ $cor2-gradient: #243B55;
 /// @param {List} $prefixes (()) - List of prefixes to print
 @mixin prefix($declarations) {
     $prefixes: webkit moz;
+
     @each $property, $value in $declarations {
         @each $prefix in $prefixes {
             #{"-" + $prefix + "-" + $property}: $value;
@@ -42,13 +45,13 @@ $cor2-gradient: #243B55;
 }
 
 @function str-replace($string, $search, $replace: "") {
-	$index: str-index($string, $search);
+    $index: str-index($string, $search);
 
-	@if $index {
-		@return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
-	}
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
 
-	@return $string;
+    @return $string;
 }
 
 // =============================================================================
@@ -56,35 +59,29 @@ $cor2-gradient: #243B55;
 // =============================================================================
 
 @mixin font-face($name, $path, $weight: null, $style: null, $exts: eot woff2 woff ttf svg) {
-	$src: null;
+    $src: null;
 
-	$extmods: (
-		eot: "?",
-		svg: "#" + str-replace($name, " ", "_")
-	);
+    $extmods: (eot: "?", svg: "#" + str-replace($name, " ", "_"));
 
-	$formats: (
-		otf: "opentype",
-		ttf: "truetype"
-	);
+    $formats: (otf: "opentype", ttf: "truetype");
 
-	@each $ext in $exts {
-		$extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
-		$format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
-		$src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
-	}
+    @each $ext in $exts {
+        $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+        $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+        $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+    }
 
-	@font-face {
-		font-family: quote($name);
-		font-style: $style;
-		font-weight: $weight;
-		src: $src;
-	}
+    @font-face {
+        font-family: quote($name);
+        font-style: $style;
+        font-weight: $weight;
+        src: $src;
+    }
 }
 
 // box-shadow
 
-@mixin box-shadow ($valores, $arg){
+@mixin box-shadow($valores, $arg) {
     -webkit-box-shadow: $valores, $arg;
     -moz-box-shadow: $valores, $arg;
 }

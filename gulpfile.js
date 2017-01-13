@@ -56,3 +56,13 @@ gulp.task('lint', function(){
         .pipe(gulp.dest('./dist/js'))
         .pipe(browsersync.stream());
 });
+
+gulp.task('clean-font-folder', function(){
+    return gulp.src('./dist/fonts')
+        .pipe(gulpclean());
+})
+
+gulp.task('make-font',['clean-font-folder'], function(){
+    return gulp.src('./src/fonts/*')
+        .pipe(gulp.dest('./dist/fonts'));
+})
