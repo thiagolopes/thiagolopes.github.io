@@ -1,22 +1,46 @@
 //======= FOTO E SOBRE ======
 .foto {
-    @include prefix((border-radius: 100%));
+    width: 100%;
+    @include prefix((border-top-left-radius: 10px));
+    @include prefix((border-top-right-radius: 10px));
 
-    @include prefix((box-shadow: 0 0 4px 4px $cor-links-hover));
+    @media (min-width: 500px) {
+        width: 500px;
+    }
+}
+
+.shadow-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    @include prefix((box-shadow: inset 0 0 5px black));
+
+    @include prefix((border-radius: 10px));
+}
+
+.titulo {
+    padding-bottom: 2em;
 }
 
 .about {
-    padding-top: 4em;
+    @include padding-right-left(0);
+    @include prefix((border-radius: 10px));
+
+    position: relative;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
-    height: 100%;
     justify-content: center;
-    margin: auto auto;
+    width: 100%;
+    background-color: $background-alternativo;
 
-    p {
-        @include padding-top-bottom(2em);
+    @media (min-width: 500px) {
+        width: 500px;
+        margin: auto auto;
     }
 }
 
@@ -28,50 +52,16 @@
 
         @include padding-right-left(3px);
 
-        color: $cor-links;
-        font-size: 2em;
-        transition: 0.3s;
-        position: relative;
-
-        @media (min-width: 1025px) {
-            font-size: 3em;
-
-            &:hover {
-                text-indent: 0;
-
-                span {
-                    visibility: visible;
-                    display: inline-block;
-                }
-            }
-        }
+        font-size: 1.5em;
     }
 }
-
-span {
-    @include padding-right-left(5px);
-
-    @include padding-top-bottom(5px);
-
-    @include prefix((border-radius: 4px));
-
-    position: absolute;
-    display: none;
-    left: -.5em;
-    top: 2.6em;
-    background-color: $cor-links;
-    visibility: hidden;
-    color: #FFF;
-    font-size: 0.4em;
-    text-shadow: none;
-}
-
 
 //=========== LISTA HABILIDADES ===========
 
 .lista-dev {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
     justify-content: space-between;
     font-size: 100px;
 }

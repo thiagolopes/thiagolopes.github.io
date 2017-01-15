@@ -8,10 +8,10 @@ header {
     @include padding-top-bottom(1em);
 
     background: $cor1-gradient;
-    background: -webkit-linear-gradient(to left, $cor1-gradient, $cor2-gradient);
-    background: linear-gradient(to left, $cor1-gradient, $cor2-gradient);
+    background: -webkit-linear-gradient(to bottom, $cor1-gradient, $cor2-gradient);
+    background: linear-gradient(to bottom, $cor1-gradient, $cor2-gradient); 
     font-weight: 300;
-    color: $cor-links-hover;
+    color: $background-alternativo;
     line-height: 2.3em;
 }
 
@@ -55,13 +55,18 @@ section {
 }
 
 a {
-    color: $cor-links-padrao;
+    color: $cor1-gradient;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 footer {
     @include padding-top-bottom(2em);
 
+    margin-top: 4em;
     background-color: $cor-cinza;
+    border-top: 2px solid $cor-br;
+
     div {
         display: flex;
         align-items: flex-start;
@@ -74,3 +79,15 @@ footer {
         @include padding-right-left(15px);
     }
 }
+
+li p:before{
+    content: '*';
+    color: $cor1-gradient;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+span {
+    display: none;
+}
+
