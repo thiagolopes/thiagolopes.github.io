@@ -16,7 +16,7 @@ header {
 }
 
 body {
-    background-color: $background-body;
+    background-color: $background-alternativo;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -62,10 +62,14 @@ a {
     font-weight: bold;
 }
 
-footer {
-    @include padding-top-bottom(2em);
+main{
+    @include padding-top-bottom(1em);
+}
 
-    margin-top: 4em;
+footer {
+    @include padding-top-bottom(15px);
+
+    margin-top: 1em;
     background-color: $cor-cinza;
     border-top: 2px solid $cor-br;
 
