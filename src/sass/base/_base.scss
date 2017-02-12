@@ -4,30 +4,26 @@
     box-sizing: border-box;
 }
 
-header {
-    @include padding-top-bottom(1em);
-
-    background: $cor1-gradient;
-    background: -webkit-linear-gradient(to bottom, $cor1-gradient, $cor2-gradient);
-    background: linear-gradient(to bottom, $cor1-gradient, $cor2-gradient);
+aside {
     font-weight: 300;
-    color: $background-alternativo;
-    line-height: 2.3em;
-
-    min-height: 100vh;
 }
 
 body {
-    background-color: $background-alternativo;
+    background-color: $background-body;
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     line-height: 1.5em;
-    color: $cor-links;
+    color: $cor-base;
+    padding-top: 2em;
 }
 
 h1 {
-    font-size: 2.2em;
+    font-size: 1.2em;
+
+    @media (min-width: 767px) {
+        font-size: 1.8em;
+    }
 }
 
 h3 {
@@ -35,44 +31,39 @@ h3 {
     line-height: 1.25;
     letter-spacing: .1em;
 
-    @include padding-top-bottom(10px);
+    //@include padding-top-bottom(10px);
+    padding-bottom: 10px;
 }
 
 h2 {
-    font-size: 1.1em;
+    font-size: 16px;
+
+    @media (min-width: 767px) {
+        font-size: 1em;
+    }
 }
 
-hr {
-    color: $cor-links-hover;
-}
-
-img {
-    position: relative;
-    width: 50%;
-    height: 50%;
-}
-
-section {
+section:nth-child(n+2) {
     @include padding-top-bottom(1em);
 }
 
+section:first-child {
+    padding-bottom: 1em;
+}
+
 a {
-    color: $cor1-gradient;
+    color: $verde;
 
     @include prefix((text-decoration: none));
 
     font-weight: bold;
 }
 
-main{
-    @include padding-top-bottom(1em);
-}
-
 footer {
     @include padding-top-bottom(15px);
 
     margin-top: 1em;
-    background-color: $cor-cinza;
+    background-color: $background-alternativo;
     border-top: 2px solid $cor-br;
 
     div {
@@ -90,7 +81,7 @@ footer {
 
 li p:before {
     content: '*';
-    color: $cor1-gradient;
+    color: $verde;
     font-weight: bold;
     margin-right: 5px;
 }
