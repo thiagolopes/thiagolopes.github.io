@@ -1,20 +1,9 @@
 $background-body: #F1F1F1;
-//$cor-links: #5C616C;
-$cor-links: #333;
-$cor-links-hover: #EFF0F2;
-$cor-links-padrao: #08CC75;
+$cor-base: #191414;
+$verde: #1ED760;
+$background-alternativo: #DCDDDE;
 
-$cor-panel: #F5F6F7;
-
-$cor1-gradient: #08CC75; 
-$cor2-gradient: #4DBA7A;
-
-$cor-cinza: #F1F1F1;
-$cor-do-semantic: #DEDEDE;
-
-$background-alternativo: #FFF;
-
-$cor-br: #DCDDDE;
+$cor-br: #D6D6D6;
 
 @mixin padding-top-bottom($medida) {
     padding-top: $medida;
