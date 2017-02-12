@@ -48,7 +48,12 @@ section:nth-child(n+2) {
 }
 
 section:first-child {
-    padding-bottom: 1em;
+    @include padding-top-bottom(1em);
+
+    @media (min-width: 767px) {
+        padding-bottom: 1em;
+        padding-top:0;
+    }
 }
 
 a {
