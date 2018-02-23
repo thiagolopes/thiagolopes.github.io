@@ -57,18 +57,12 @@ html{
 }
 
 // do a for
-.card-back{
-    border-top: 6px solid $color-green !important;
-}
 
-.card-front{
-    border-top: 6px solid $color-orange !important;
+@each $a, $b in ('back': $color-green, 'front': $color-orange, 'infra': $color-blue){
+    .card-#{$a}{
+        border-top: 6px solid #{$b} !important;
+    }
 }
-
-.card-infra{
-    border-top: 6px solid $color-blue !important;
-}
-
 
 .lead{
     font-size: 1.1rem;
