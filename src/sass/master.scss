@@ -51,9 +51,15 @@ html{
     border-top: $border-width solid $border-color;
 }
 
+.title-sections{
+    font-size: 1.0rem;
+    color: #909ca8;
+    margin-bottom: 10px;
+}
+
 .title-site{
     font-family: 'Anton', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
 }
 
 // do a for
@@ -64,8 +70,8 @@ html{
     }
 }
 
-.lead{
-    font-size: 1.1rem;
+.leads{
+    font-size: 1rem;
 }
 
 h4{
