@@ -49,7 +49,6 @@ table {
 
 /* everthing */
 html{
-
     font-family: 'PT Mono', monospace;
     background-color: #222222;
     color: white;
@@ -62,16 +61,20 @@ a{
 }
 
 body{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
+    font-size: 14px;
+    margin: 2em auto;
+    max-width: 800px;
+    padding: 1em;
+    line-height: 1.4;
+    text-align: justify;
+}
+
+header{
+    padding-top: 2rem;
 }
 
 main{
     padding: 1rem;
 }
-
 
 @import url('https://fonts.googleapis.com/css?family=PT+Mono');
