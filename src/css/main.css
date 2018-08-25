@@ -78,7 +78,7 @@ main{
     padding: 1rem;
 }
 
-.cat-pre{
+.this_cat_found_music{
     float: inherit;
     padding-left: 1em;
     padding-right: 1em;
@@ -104,10 +104,8 @@ li::before{
 
 @media (min-width: 600px)
 {
-    .cat-pre{
+    .this_cat_found_music{
         float: right;
-        padding-left: 1em;
-        padding-right: 1em;
     }
 }
 
