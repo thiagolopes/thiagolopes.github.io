@@ -50,7 +50,8 @@ table {
 /* everthing */
 html{
     font-family: 'PT Mono', monospace;
-    background-color: #222222;
+    /* background-color: #222222; */
+    background-color: black;
     color: white;
     font-size: 14px;
 }
@@ -75,6 +76,39 @@ header{
 
 main{
     padding: 1rem;
+}
+
+.cat-pre{
+    float: inherit;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.like{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+ul{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+li::before{
+    content: "* ";
+}
+
+.i{
+    font-style: italic;
+}
+
+@media (min-width: 600px)
+{
+    .cat-pre{
+        float: right;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
 }
 
 @import url('https://fonts.googleapis.com/css?family=PT+Mono');
