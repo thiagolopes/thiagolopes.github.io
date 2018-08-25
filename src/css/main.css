@@ -74,7 +74,7 @@ header{
     margin-top: 2rem;
 }
 
-.this_cat_found_music{
+.catlovemusic{
     float: inherit;
     margin-left: 1em;
     margin-right: 1em;
@@ -100,9 +100,8 @@ li::before{
     font-style: italic;
 }
 
-@media (min-width: 600px)
-{
-    .this_cat_found_music{
+@media(min-width: 600px){
+    .catlovemusic{
         float: right;
     }
 }
