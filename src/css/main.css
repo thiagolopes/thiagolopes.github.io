@@ -52,7 +52,7 @@ html{
     font-family: 'PT Mono', monospace;
     /* background-color: #222222; */
     background-color: black;
-    color: white;
+    color: #fff;
     font-size: 14px;
 }
 
@@ -98,6 +98,10 @@ li::before{
 
 .i{
     font-style: italic;
+}
+
+.haskell{
+    color: #8F4E8B;
 }
 
 @media(min-width: 600px){
