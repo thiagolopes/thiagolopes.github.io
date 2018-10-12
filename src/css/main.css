@@ -16,95 +16,95 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-    display: block;
+  display: block;
 }
 body {
-    line-height: 1;
+  line-height: 1;
 }
 ol, ul {
-    list-style: none;
+  list-style: none;
 }
 blockquote, q {
-    quotes: none;
+  quotes: none;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* everthing */
 html{
-    font-family: 'DejaVuSansMonospace', monospace;
-    background-color: black;
-    color: #fff;
-    font-size: 14px;
+  font-family: 'DejaVuSansMonospace', monospace;
+  background-color: black;
+  color: #fff;
+  font-size: 14px;
 }
 
 a{
-    color: #F75456;
-    font-style: italic;
+  color: #F75456;
+  font-style: italic;
 }
 
 body{
-    font-size: 14px;
-    margin: 2em auto;
-    max-width: 800px;
-    padding: 1em;
-    line-height: 1.4;
-    text-align: justify;
+  font-size: 14px;
+  margin: 2em auto;
+  max-width: 800px;
+  padding: 1em;
+  line-height: 1.4;
+  text-align: justify;
 }
 
 header{
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 .catlovemusic{
-    float: inherit;
-    margin-left: 1em;
-    margin-right: 1em;
+  float: inherit;
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
 .like{
-    padding-top: 1em;
-    padding-bottom: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 ul{
-    padding-left: 1em;
-    padding-right: 1em;
-    margin-top: .5em;
-    margin-bottom: .5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
 
 li::before{
-    content: "* ";
+  content: "* ";
 }
 
 .i{
-    font-style: italic;
+  font-style: italic;
 }
 
 .haskell{
-    color: #8F4E8B;
+  color: #8F4E8B;
 }
 
 @media(min-width: 600px){
-    .catlovemusic{
-        float: right;
-    }
+  .catlovemusic{
+    float: right;
+  }
 }
