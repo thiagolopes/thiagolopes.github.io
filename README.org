@@ -1,0 +1,11 @@
+Hi, this is my personal website
+
+rules:
+    - javascript free in main-page/posts
+    - mobile first
+    - easy
+    - more compatible with older browsers
+    - no external dependencies
+
+inspiration:
+    - http://z3bra.org/pm/
