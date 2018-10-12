@@ -50,13 +50,15 @@ table {
 /* everthing */
 html{
   font-family: 'DejaVuSansMonospace', monospace;
-  background-color: black;
-  color: #fff;
+  /* background-color: black; */
+  /* color: #fff; */
+  background-color: #fff;
+  color: black;
   font-size: 14px;
 }
 
 a{
-  color: #F75456;
+  color: #2562DC;
   font-style: italic;
 }
 
