@@ -49,8 +49,7 @@ table {
 
 /* everthing */
 html{
-    font-family: 'PT Mono', monospace;
-    /* background-color: #222222; */
+    font-family: 'DejaVuSansMonospace', monospace;
     background-color: black;
     color: #fff;
     font-size: 14px;
@@ -109,5 +108,3 @@ li::before{
         float: right;
     }
 }
-
-@import url('https://fonts.googleapis.com/css?family=PT+Mono');
