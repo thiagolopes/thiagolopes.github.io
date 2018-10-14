@@ -98,6 +98,8 @@ header{
   float: inherit;
   margin-left: 1em;
   margin-right: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }
 
 .like{
@@ -112,6 +114,10 @@ ul{
   margin-bottom: .5em;
 }
 
+li{
+  text-align: left;
+}
+
 li::before{
   content: "* ";
 }
@@ -122,12 +128,6 @@ li::before{
 
 .haskell{
   color: #8F4E8B;
-}
-
-@media(min-width: 600px){
-  .catlovemusic{
-    float: right;
-  }
 }
 
 blockquote {
@@ -159,4 +159,11 @@ blockquote p {
 
 b, .bold{
   font-weight: bold;
+}
+
+
+@media(min-width: 600px){
+  .catlovemusic{
+    float: right;
+  }
 }
