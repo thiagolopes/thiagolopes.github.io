@@ -69,7 +69,7 @@ a::after {
   position: relative;
   z-index: -10;
   content: "";
-  background: yellow;
+  background: #8DFEC9;
   width: 100%;
   height: 4px;
   position: absolute;
@@ -78,7 +78,7 @@ a::after {
 }
 
 a:hover {
-  background: yellow;
+  background: #8DFEC9;
 }
 
 body{
