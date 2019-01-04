@@ -115,15 +115,12 @@ li::before{
 }
 
 blockquote {
-  /* padding: 0.5em 10px; */
   quotes: "\201C""\201D";
+  margin: 0 0 10px 0;
 }
 
 blockquote:before{
   content: open-quote;
-  line-height: 0.1em;
-  margin-right: 0.25em;
-
 }
 
 blockquote p {
