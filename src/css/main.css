@@ -49,12 +49,11 @@ table {
 
 /* everthing */
 html{
-  font-family: 'DejaVuSansMonospace', monospace;
+  font-family: monospace;
   /* background-color: black; */
   /* color: #fff; */
   background-color: #fafafa;
   color: #333;
-  font-size: 14px;
 }
 
 a{
@@ -69,7 +68,8 @@ a::after {
   position: relative;
   z-index: -10;
   content: "";
-  background: #8DFEC9;
+  /* background: #8DFEC9; */
+  background: black;
   width: 100%;
   height: 4px;
   position: absolute;
@@ -78,20 +78,16 @@ a::after {
 }
 
 a:hover {
-  background: #8DFEC9;
+  background: #000;
+  color: #00FF00;
 }
 
 body{
-  font-size: 14px;
-  margin: 2em auto;
+  font-size: 12px;
+  margin:  20px 10px 0 20px;
   max-width: 800px;
-  padding: 1em;
   line-height: 1.4;
-  text-align: justify;
-}
-
-header{
-  margin-top: 2rem;
+  text-align: left;
 }
 
 .catlovemusic{
@@ -100,18 +96,6 @@ header{
   margin-right: 1em;
   padding-top: 1em;
   padding-bottom: 1em;
-}
-
-.like{
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-ul{
-  padding-left: 1em;
-  padding-right: 1em;
-  margin-top: .5em;
-  margin-bottom: .5em;
 }
 
 li{
@@ -131,7 +115,6 @@ li::before{
 }
 
 blockquote {
-  margin: 1.5em 1em;
   /* padding: 0.5em 10px; */
   quotes: "\201C""\201D";
 }
@@ -154,6 +137,7 @@ blockquote p {
 
 b, .bold{
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 
@@ -161,4 +145,20 @@ b, .bold{
   .catlovemusic{
     float: right;
   }
+}
+
+.title{
+  margin: 15px 0 0 0;
+}
+
+.subtext{
+  margin: 0 0 0 50px;
+}
+
+.l_subtext{
+  margin: 0 0 0 25px;
+}
+
+.title_ul::before{
+  content: "--";
 }
