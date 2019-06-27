@@ -140,16 +140,6 @@ b, .bold {
 }
 
 
-@media(min-width: 600px) {
-  .catlovemusic {
-    float: right;
-  }
-
-  body {
-    margin: 20px auto 0 auto;
-  }
-}
-
 .title {
   margin: 15px 0 0 0;
 }
@@ -176,4 +166,39 @@ h1:after {
     blink 1s steps(1) infinite;
   border-right: #000 .2em solid;
   padding-left: 1px;
+}
+
+.notfound {
+  background-color: #000;
+  position: fixed;
+  margin: 0 0;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+}
+
+.cowboy {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  font-style: italic;
+  font-family: space;
+  font-size: 2em;
+  color: #F3F3F3;
+  padding-right: .3em;
+}
+
+
+@media(min-width: 600px) {
+  .catlovemusic {
+    float: right;
+  }
+
+  body {
+    margin: 20px auto 0 auto;
+  }
+
+  .cowboy {
+    font-size: 3em;
+  }
 }
