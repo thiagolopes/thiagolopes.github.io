@@ -82,7 +82,7 @@ a:hover {
 
 body {
   font-size: 14px;
-  margin:  20px 10px 0 20px;
+  margin: 20px 10px 0 20px;
   max-width: 800px;
   line-height: 1.4;
   text-align: left;
@@ -100,8 +100,12 @@ li {
   text-align: left;
 }
 
+.identation > li {
+  margin: 0 0 0 25px;
+}
+
 li::before {
-  content: "* ";
+    content: "- ";
 }
 
 .i {
@@ -137,8 +141,12 @@ b, .bold {
 
 
 @media(min-width: 600px) {
-  .catlovemusic{
+  .catlovemusic {
     float: right;
+  }
+
+  body {
+    margin: 20px auto 0 auto;
   }
 }
 
@@ -150,10 +158,22 @@ b, .bold {
   margin: 0 0 0 50px;
 }
 
-.l_subtext {
+.l_subtext, .indentation {
   margin: 0 0 0 25px;
 }
 
-.title_ul::before {
-  content: "--";
+.title_ul {
+  text-transform: uppercase;
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+h1:after {
+  content: " ";
+  animation:
+    blink 1s steps(1) infinite;
+  border-right: #000 .2em solid;
+  padding-left: 1px;
 }
