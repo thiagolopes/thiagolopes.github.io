@@ -48,6 +48,12 @@ table {
 }
 
 /* everthing */
+
+@font-face {
+  font-family: space;
+  src: url('CCB.ttf');
+}
+
 html {
   font-family: monospace;
   background-color: #fafafa;
