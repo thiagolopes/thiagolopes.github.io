@@ -48,15 +48,13 @@ table {
 }
 
 /* everthing */
-html{
+html {
   font-family: monospace;
-  /* background-color: black; */
-  /* color: #fff; */
   background-color: #fafafa;
   color: #333;
 }
 
-a{
+a {
   display: inline-block;
   text-decoration: none;
   color: #333;
@@ -82,8 +80,8 @@ a:hover {
   color: #00FF00;
 }
 
-body{
-  font-size: 12px;
+body {
+  font-size: 14px;
   margin:  20px 10px 0 20px;
   max-width: 800px;
   line-height: 1.4;
@@ -98,19 +96,19 @@ body{
   padding-bottom: 1em;
 }
 
-li{
+li {
   text-align: left;
 }
 
-li::before{
+li::before {
   content: "* ";
 }
 
-.i{
+.i {
   font-style: italic;
 }
 
-.haskell{
+.haskell {
   color: #8F4E8B;
 }
 
@@ -119,7 +117,7 @@ blockquote {
   margin: 0 0 10px 0;
 }
 
-blockquote:before{
+blockquote:before {
   content: open-quote;
 }
 
@@ -127,35 +125,35 @@ blockquote p {
   display: inline;
 }
 
-.cite{
+.cite {
   font-style: italic;
   float: right;
 }
 
-b, .bold{
+b, .bold {
   font-weight: bold;
   text-transform: uppercase;
 }
 
 
-@media(min-width: 600px){
+@media(min-width: 600px) {
   .catlovemusic{
     float: right;
   }
 }
 
-.title{
+.title {
   margin: 15px 0 0 0;
 }
 
-.subtext{
+.subtext {
   margin: 0 0 0 50px;
 }
 
-.l_subtext{
+.l_subtext {
   margin: 0 0 0 25px;
 }
 
-.title_ul::before{
+.title_ul::before {
   content: "--";
 }
