@@ -1,3 +1,3 @@
 #!/usr/bin/sh
 
-cd sakura && npm run scss
+cd css/sakura && npm run scss
