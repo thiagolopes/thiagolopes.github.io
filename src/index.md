@@ -17,7 +17,6 @@ Hi, I'm Thiago
 - [gnu/linux](https://www.gnu.org/gnu/linux-and-gnu.en.html) **-** using [debian](https://www.debian.org/)
 - front-end using [elm](http://elm-lang.org/) without js to render contents
 - [lua](https://www.lua.org/) **-** because it is nice to play with [love2d](https://love2d.org/)
-- music **-** with [ＶＡＰＯＲＷＡＶＥ](https://www.youtube.com/watch?v=aQkPcPqTq4M) and [ シティポップ(city pop)](https://www.youtube.com/watch?v=3bNITQR4Uso)
 
 ### see also
 
